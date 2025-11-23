@@ -31,6 +31,7 @@
     <main class="main">
       <!-- LEFT COLUMN -->
       <section class="col">
+
         <!-- HERO -->
         <section class="card" id="hero">
           <div class="card-inner">
@@ -38,21 +39,25 @@
               <span class="tag-dot"></span>
               Open to Cloud / DevOps opportunities
             </div>
+
             <h1 class="hero-title">
               Hey, I'm <span>Aditya</span> – I ship reliable infra with Docker, Kubernetes & automation.
             </h1>
+
             <p class="hero-sub">
-              Cloud / DevOps engineer with experience across Linux, containers, CI/CD, observability
-              and automation. I enjoy taking infra from “it works on my laptop” to “this is monitored,
-              repeatable and boring in production”.
+              Cloud / DevOps engineer with hands-on experience across Linux, containers, CI/CD,
+              observability and automation. I like taking infra from “works on my machine” to
+              “predictable, monitored and boring in production”.
             </p>
+
             <div class="hero-meta">
               <div class="pill">RHCSA • RHCE</div>
               <div class="pill">Docker • Kubernetes • AWS</div>
               <div class="pill">Linux • Ansible • Git</div>
             </div>
+
             <div class="hero-actions">
-              <a href="assets/Aditya_Chorat_Resume.pdf" target="_blank" class="btn btn-primary">
+              <a href="assets/aditya-resume.pdf" target="_blank" class="btn btn-primary">
                 <span>Download Resume</span>
                 <span class="btn-icon">⬇️</span>
               </a>
@@ -104,10 +109,6 @@
                   <span>GitOps</span>
                   <span>Prometheus</span>
                 </div>
-                <div class="project-links">
-                  <!-- Replace with real GitHub later -->
-                  <a href="#" target="_blank">Code (coming soon)</a>
-                </div>
               </article>
 
               <article class="project" data-tags="Docker,CI/CD,Linux">
@@ -116,16 +117,13 @@
                   <span class="project-year">2024</span>
                 </div>
                 <p class="project-desc">
-                  Built a container-first CI/CD pipeline for microservices with Docker, GitLab CI
-                  and environment-specific configs. Reduced deployment time and made rollbacks trivial.
+                  Built a container-first CI/CD pipeline using Docker and GitLab CI with automatic
+                  testing and rollout strategy. Reduced deployment time significantly.
                 </p>
                 <div class="project-tags">
                   <span>Docker</span>
                   <span>GitLab CI</span>
                   <span>Linux</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" target="_blank">Code (coming soon)</a>
                 </div>
               </article>
 
@@ -135,16 +133,13 @@
                   <span class="project-year">2023</span>
                 </div>
                 <p class="project-desc">
-                  Automated baseline hardening for RHEL servers using Ansible: users, SSH, firewall,
-                  logging, and compliance checks inspired by RHCSA/RHCE best practices.
+                  Automated baseline hardening for RHEL servers using Ansible, covering SSH,
+                  users, firewall, logging and compliance checks inspired by RHCSA/RHCE.
                 </p>
                 <div class="project-tags">
                   <span>RHEL</span>
                   <span>Ansible</span>
                   <span>RHCSA/RHCE</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" target="_blank">Code (coming soon)</a>
                 </div>
               </article>
 
@@ -154,16 +149,13 @@
                   <span class="project-year">2023</span>
                 </div>
                 <p class="project-desc">
-                  Deployed an observability stack for workloads on EKS with metrics, logs and alerts
-                  across clusters, using managed services and IaC to keep it repeatable.
+                  Deployed an observability stack on Amazon EKS using CloudWatch, Prometheus
+                  exporters and IaC, enabling full metrics + log visibility.
                 </p>
                 <div class="project-tags">
                   <span>AWS</span>
                   <span>EKS</span>
                   <span>Terraform</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" target="_blank">Code (coming soon)</a>
                 </div>
               </article>
 
@@ -182,34 +174,23 @@
               <div>
                 <div class="section-title">Certifications</div>
                 <div class="section-sub">
-                  Click to view or verify against stored credential IDs.
+                  Click any certificate to view or verify.
                 </div>
               </div>
             </div>
 
             <!-- BADGE FILTERS -->
             <div class="badge-row" id="cert-badges">
-              <button class="badge active" data-tech="ALL">
-                <span class="dot"></span> All
-              </button>
-              <button class="badge" data-tech="Linux">
-                <span class="dot"></span> RHCSA / RHCE
-              </button>
-              <button class="badge" data-tech="Docker">
-                <span class="dot"></span> Docker
-              </button>
-              <button class="badge" data-tech="Kubernetes">
-                <span class="dot"></span> Kubernetes
-              </button>
-              <button class="badge" data-tech="AWS">
-                <span class="dot"></span> AWS
-              </button>
+              <button class="badge active" data-tech="ALL"><span class="dot"></span> All</button>
+              <button class="badge" data-tech="Linux"><span class="dot"></span> RHCSA / RHCE</button>
+              <button class="badge" data-tech="Docker"><span class="dot"></span> Docker</button>
+              <button class="badge" data-tech="Kubernetes"><span class="dot"></span> Kubernetes</button>
+              <button class="badge" data-tech="AWS"><span class="dot"></span> AWS</button>
+              <button class="badge" data-tech="AI"><span class="dot"></span> AI/ML</button>
             </div>
 
-            <!-- CERT LIST -->
-            <div class="cert-list" id="cert-list">
-              <!-- Filled by script.js using data model -->
-            </div>
+            <!-- CERT LIST (FILLED BY JS) -->
+            <div class="cert-list" id="cert-list"></div>
 
             <button class="btn btn-ghost" id="open-verify">
               Run certificate verification
@@ -217,14 +198,14 @@
           </div>
         </section>
 
-        <!-- ABOUT / CONTACT -->
+        <!-- CONTACT -->
         <section class="card" id="contact">
           <div class="card-inner">
             <div class="section-header">
               <div>
                 <div class="section-title">About & Contact</div>
                 <div class="section-sub">
-                  Quick snapshot + direct contact options.
+                  Quick snapshot + ways to reach me.
                 </div>
               </div>
             </div>
@@ -232,34 +213,31 @@
             <div class="list">
               <div class="list-item">
                 <div class="list-title">Role</div>
-                <div class="list-meta">Cloud / DevOps Engineer with focus on Kubernetes, Docker and Linux.</div>
+                <div class="list-meta">Cloud / DevOps Engineer</div>
               </div>
+
               <div class="list-item">
                 <div class="list-title">Experience</div>
-                <div class="list-meta">Hands-on with infra automation, containerization and production operations.</div>
+                <div class="list-meta">
+                  Hands-on with infrastructure automation, containerization and Linux operations.
+                </div>
               </div>
+
               <div class="list-item">
                 <div class="list-title">Strong Areas</div>
                 <div class="list-meta">
-                  Kubernetes, Docker, RHCSA/RHCE-level Linux, monitoring, troubleshooting, automation.
+                  Kubernetes, Docker, Linux (RHCSA/RHCE), monitoring, observability, automation.
                 </div>
               </div>
             </div>
 
             <div class="contact-row">
-              <a class="contact-pill" href="mailto:your-email@example.com">
-                Email
-              </a>
-              <a class="contact-pill" href="https://github.com/YOUR_GITHUB" target="_blank">
-                GitHub
-              </a>
-              <a class="contact-pill" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">
-                LinkedIn
-              </a>
-              <a class="contact-pill" href="tel:+919766974713">
-                Phone: +91-9766974713
-              </a>
+              <a class="contact-pill" href="mailto:adityachorat806@gmail.com">Email</a>
+              <a class="contact-pill" href="https://github.com/ditya373-cell" target="_blank">GitHub</a>
+              <a class="contact-pill" href="https://www.linkedin.com/in/aditya-chorat-73b9872b4" target="_blank">LinkedIn</a>
+              <a class="contact-pill" href="tel:+919766974713">Phone: +91-9766974713</a>
             </div>
+
           </div>
         </section>
 
@@ -280,6 +258,7 @@
           <button class="modal-close" id="close-verify">✕</button>
         </div>
         <div class="modal-body">
+
           <label class="field">
             <span class="field-label">Select certificate</span>
             <select id="verify-cert-select"></select>
@@ -293,6 +272,7 @@
           <button class="btn btn-primary" id="run-verify">Verify</button>
 
           <div id="verify-result" class="verify-result"></div>
+
         </div>
       </div>
     </div>
