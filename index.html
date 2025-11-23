@@ -32,22 +32,18 @@
       <!-- LEFT COLUMN -->
       <section class="col">
 
-        <!-- HERO -->
+        <!-- HERO SECTION -->
         <section class="card" id="hero">
           <div class="card-inner">
-            <div class="tag">
-              <span class="tag-dot"></span>
-              Open to Cloud / DevOps opportunities
-            </div>
+            <div class="tag"><span class="tag-dot"></span> Open to Cloud / DevOps Roles</div>
 
             <h1 class="hero-title">
-              Hey, I'm <span>Aditya</span> – I ship reliable infra with Docker, Kubernetes & automation.
+              Hey, I'm <span>Aditya</span> — I build reliable infra with Docker, Kubernetes & automation.
             </h1>
 
             <p class="hero-sub">
-              Cloud / DevOps engineer with hands-on experience across Linux, containers, CI/CD,
-              observability and automation. I like taking infra from “works on my machine” to
-              “predictable, monitored and boring in production”.
+              DevOps / Cloud engineer with hands-on experience across Linux, containers, CI/CD,
+              monitoring and automation. I love turning infra chaos into predictable, monitored systems.
             </p>
 
             <div class="hero-meta">
@@ -57,31 +53,31 @@
             </div>
 
             <div class="hero-actions">
-              <a href="https://ditya373-cell.github.io/Portfolio/assets/aditya-resume.pdf" target="_blank" class="btn btn-primary">
+              <a href="https://ditya373-cell.github.io/Portfolio/assets/aditya-resume.pdf"
+                 target="_blank" class="btn btn-primary">
                 <span>Download Resume</span>
                 <span class="btn-icon">⬇️</span>
               </a>
+
               <button class="btn btn-ghost" id="open-verify-from-hero">
-                <span>Verify My Certificates</span>
+                <span>Verify Certificates</span>
                 <span class="btn-icon">✅</span>
               </button>
             </div>
           </div>
         </section>
 
-        <!-- PROJECTS -->
+        <!-- PROJECTS SECTION -->
         <section class="card" id="projects">
           <div class="card-inner">
+
             <div class="section-header">
               <div>
                 <div class="section-title">Projects</div>
-                <div class="section-sub">
-                  Filter projects by stack to see what matches your tech.
-                </div>
+                <div class="section-sub">Filter projects by stack.</div>
               </div>
             </div>
 
-            <!-- FILTER BUTTONS -->
             <div class="filter-row" id="project-filters">
               <button class="filter-btn active" data-filter="ALL">All</button>
               <button class="filter-btn" data-filter="Kubernetes">Kubernetes</button>
@@ -90,7 +86,6 @@
               <button class="filter-btn" data-filter="Linux">Linux</button>
             </div>
 
-            <!-- PROJECT CARDS -->
             <div class="projects-grid">
 
               <article class="project" data-tags="Kubernetes,Docker,AWS">
@@ -99,15 +94,11 @@
                   <span class="project-year">2025</span>
                 </div>
                 <p class="project-desc">
-                  Designed a self-healing Kubernetes cluster with health checks, alerting and
-                  automated pod rescheduling. Integrated Prometheus + Grafana dashboards and
-                  rollback strategy via GitOps.
+                  Built a self-healing Kubernetes cluster with node health checks, pod restarts,
+                  auto-recovery, and monitoring using Prometheus + Grafana.
                 </p>
                 <div class="project-tags">
-                  <span>Kubernetes</span>
-                  <span>Docker</span>
-                  <span>GitOps</span>
-                  <span>Prometheus</span>
+                  <span>Kubernetes</span><span>Docker</span><span>Prometheus</span><span>GitOps</span>
                 </div>
               </article>
 
@@ -117,29 +108,24 @@
                   <span class="project-year">2024</span>
                 </div>
                 <p class="project-desc">
-                  Built a container-first CI/CD pipeline using Docker and GitLab CI with automatic
-                  testing and rollout strategy. Reduced deployment time significantly.
+                  Container-first CI/CD pipeline using Docker and GitLab CI that automated builds,
+                  testing and blue/green deployment.
                 </p>
                 <div class="project-tags">
-                  <span>Docker</span>
-                  <span>GitLab CI</span>
-                  <span>Linux</span>
+                  <span>Docker</span><span>GitLab CI</span><span>Linux</span>
                 </div>
               </article>
 
               <article class="project" data-tags="Linux,RHCSA,RHCE">
                 <div class="project-title">
-                  <span>Enterprise Linux Hardening Toolkit</span>
+                  <span>RHEL Hardening Toolkit</span>
                   <span class="project-year">2023</span>
                 </div>
                 <p class="project-desc">
-                  Automated baseline hardening for RHEL servers using Ansible, covering SSH,
-                  users, firewall, logging and compliance checks inspired by RHCSA/RHCE.
+                  Automated user management, SSH hardening, firewall, logging and compliance using Ansible.
                 </p>
                 <div class="project-tags">
-                  <span>RHEL</span>
-                  <span>Ansible</span>
-                  <span>RHCSA/RHCE</span>
+                  <span>RHEL</span><span>Ansible</span><span>RHCSA/RHCE</span>
                 </div>
               </article>
 
@@ -149,19 +135,17 @@
                   <span class="project-year">2023</span>
                 </div>
                 <p class="project-desc">
-                  Deployed an observability stack on Amazon EKS using CloudWatch, Prometheus
-                  exporters and IaC, enabling full metrics + log visibility.
+                  Full observability for EKS using Prometheus exporters, CloudWatch logs and IaC with Terraform.
                 </p>
                 <div class="project-tags">
-                  <span>AWS</span>
-                  <span>EKS</span>
-                  <span>Terraform</span>
+                  <span>AWS</span><span>EKS</span><span>Terraform</span>
                 </div>
               </article>
 
             </div>
           </div>
         </section>
+
       </section>
 
       <!-- RIGHT COLUMN -->
@@ -170,43 +154,38 @@
         <!-- CERTIFICATIONS -->
         <section class="card" id="certifications">
           <div class="card-inner">
+
             <div class="section-header">
               <div>
                 <div class="section-title">Certifications</div>
-                <div class="section-sub">
-                  Click any certificate to view or verify.
-                </div>
+                <div class="section-sub">Click to view or verify.</div>
               </div>
             </div>
 
-            <!-- BADGE FILTERS -->
             <div class="badge-row" id="cert-badges">
               <button class="badge active" data-tech="ALL"><span class="dot"></span> All</button>
               <button class="badge" data-tech="Linux"><span class="dot"></span> RHCSA / RHCE</button>
               <button class="badge" data-tech="Docker"><span class="dot"></span> Docker</button>
               <button class="badge" data-tech="Kubernetes"><span class="dot"></span> Kubernetes</button>
               <button class="badge" data-tech="AWS"><span class="dot"></span> AWS</button>
-              <button class="badge" data-tech="AI"><span class="dot"></span> AI/ML</button>
+              <button class="badge" data-tech="AI"><span class="dot"></span> AI / ML</button>
             </div>
 
-            <!-- CERT LIST (FILLED BY JS) -->
             <div class="cert-list" id="cert-list"></div>
 
-            <button class="btn btn-ghost" id="open-verify">
-              Run certificate verification
-            </button>
+            <button class="btn btn-ghost" id="open-verify">Run Verification</button>
+
           </div>
         </section>
 
-        <!-- CONTACT -->
+        <!-- CONTACT SECTION -->
         <section class="card" id="contact">
           <div class="card-inner">
+
             <div class="section-header">
               <div>
                 <div class="section-title">About & Contact</div>
-                <div class="section-sub">
-                  Quick snapshot + ways to reach me.
-                </div>
+                <div class="section-sub">Quick ways to reach me.</div>
               </div>
             </div>
 
@@ -215,26 +194,20 @@
                 <div class="list-title">Role</div>
                 <div class="list-meta">Cloud / DevOps Engineer</div>
               </div>
-
               <div class="list-item">
                 <div class="list-title">Experience</div>
-                <div class="list-meta">
-                  Hands-on with infrastructure automation, containerization and Linux operations.
-                </div>
+                <div class="list-meta">Automation, Containers, Linux, Observability</div>
               </div>
-
               <div class="list-item">
-                <div class="list-title">Strong Areas</div>
-                <div class="list-meta">
-                  Kubernetes, Docker, Linux (RHCSA/RHCE), monitoring, observability, automation.
-                </div>
+                <div class="list-title">Skills</div>
+                <div class="list-meta">Kubernetes, Docker, AWS, RHEL, Ansible, Git</div>
               </div>
             </div>
 
             <div class="contact-row">
               <a class="contact-pill" href="mailto:adityachorat806@gmail.com">Email</a>
               <a class="contact-pill" href="https://github.com/ditya373-cell" target="_blank">GitHub</a>
-              <a class="contact-pill" href="https://www.linkedin.com/in/aditya-chorat-73b9872b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+              <a class="contact-pill" href="https://www.linkedin.com/in/aditya-chorat-73b9872b4" target="_blank">LinkedIn</a>
               <a class="contact-pill" href="tel:+919766974713">Phone: +91-9766974713</a>
             </div>
 
@@ -247,32 +220,30 @@
     <!-- FOOTER -->
     <footer class="footer">
       <span>© <span id="year"></span> Aditya Chorat</span>
-      <span>Built with HTML, CSS, JS • Hosted on GitHub Pages</span>
+      <span>Hosted on GitHub Pages</span>
     </footer>
 
-    <!-- CERT VERIFICATION MODAL -->
+    <!-- VERIFICATION MODAL -->
     <div class="modal-backdrop" id="verify-modal">
       <div class="modal">
         <div class="modal-header">
-          <span>Verify a Certification</span>
+          <span>Verify Certificate</span>
           <button class="modal-close" id="close-verify">✕</button>
         </div>
         <div class="modal-body">
-
           <label class="field">
-            <span class="field-label">Select certificate</span>
+            <span class="field-label">Select Certificate</span>
             <select id="verify-cert-select"></select>
           </label>
 
           <label class="field">
-            <span class="field-label">Enter verification code</span>
-            <input type="text" id="verify-code-input" placeholder="E.g. RHCSA-1234-5678" />
+            <span class="field-label">Enter Verification Code</span>
+            <input type="text" id="verify-code-input" placeholder="e.g. RHCE-2024-CHORAT" />
           </label>
 
           <button class="btn btn-primary" id="run-verify">Verify</button>
 
           <div id="verify-result" class="verify-result"></div>
-
         </div>
       </div>
     </div>
