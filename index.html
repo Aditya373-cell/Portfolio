@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aditya Chorat | Cloud & DevOps Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="shell">
+  <div class="app">
+
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="nav-left">
+        <div class="avatar">A</div>
+        <div class="nav-name">
+          <span class="nav-name-main">Aditya Chorat</span>
+          <span class="nav-name-sub">Cloud / DevOps / Platform Engineer</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <!-- MAIN GRID -->
+    <main class="main">
+      <!-- LEFT COLUMN -->
+      <section class="col">
+        <!-- HERO -->
+        <section class="card" id="hero">
+          <div class="card-inner">
+            <div class="tag">
+              <span class="tag-dot"></span>
+              Open to Cloud / DevOps opportunities
+            </div>
+            <h1 class="hero-title">
+              Hey, I'm <span>Aditya</span> – I ship reliable infra with Docker, Kubernetes & automation.
+            </h1>
+            <p class="hero-sub">
+              Cloud / DevOps engineer with experience across Linux, containers, CI/CD, observability
+              and automation. I enjoy taking infra from “it works on my laptop” to “this is monitored,
+              repeatable and boring in production”.
+            </p>
+            <div class="hero-meta">
+              <div class="pill">RHCSA • RHCE</div>
+              <div class="pill">Docker • Kubernetes • AWS</div>
+              <div class="pill">Linux • Ansible • Git</div>
+            </div>
+            <div class="hero-actions">
+              <a href="assets/Aditya_Chorat_Resume.pdf" target="_blank" class="btn btn-primary">
+                <span>Download Resume</span>
+                <span class="btn-icon">⬇️</span>
+              </a>
+              <button class="btn btn-ghost" id="open-verify-from-hero">
+                <span>Verify My Certificates</span>
+                <span class="btn-icon">✅</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="card" id="projects">
+          <div class="card-inner">
+            <div class="section-header">
+              <div>
+                <div class="section-title">Projects</div>
+                <div class="section-sub">
+                  Filter projects by stack to see what matches your tech.
+                </div>
+              </div>
+            </div>
+
+            <!-- FILTER BUTTONS -->
+            <div class="filter-row" id="project-filters">
+              <button class="filter-btn active" data-filter="ALL">All</button>
+              <button class="filter-btn" data-filter="Kubernetes">Kubernetes</button>
+              <button class="filter-btn" data-filter="Docker">Docker</button>
+              <button class="filter-btn" data-filter="AWS">AWS</button>
+              <button class="filter-btn" data-filter="Linux">Linux</button>
+            </div>
+
+            <!-- PROJECT CARDS -->
+            <div class="projects-grid">
+
+              <article class="project" data-tags="Kubernetes,Docker,AWS">
+                <div class="project-title">
+                  <span>Self-Healing Kubernetes Platform</span>
+                  <span class="project-year">2025</span>
+                </div>
+                <p class="project-desc">
+                  Designed a self-healing Kubernetes cluster with health checks, alerting and
+                  automated pod rescheduling. Integrated Prometheus + Grafana dashboards and
+                  rollback strategy via GitOps.
+                </p>
+                <div class="project-tags">
+                  <span>Kubernetes</span>
+                  <span>Docker</span>
+                  <span>GitOps</span>
+                  <span>Prometheus</span>
+                </div>
+                <div class="project-links">
+                  <!-- Replace with real GitHub later -->
+                  <a href="#" target="_blank">Code (coming soon)</a>
+                </div>
+              </article>
+
+              <article class="project" data-tags="Docker,CI/CD,Linux">
+                <div class="project-title">
+                  <span>Dockerized CI/CD Pipeline</span>
+                  <span class="project-year">2024</span>
+                </div>
+                <p class="project-desc">
+                  Built a container-first CI/CD pipeline for microservices with Docker, GitLab CI
+                  and environment-specific configs. Reduced deployment time and made rollbacks trivial.
+                </p>
+                <div class="project-tags">
+                  <span>Docker</span>
+                  <span>GitLab CI</span>
+                  <span>Linux</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" target="_blank">Code (coming soon)</a>
+                </div>
+              </article>
+
+              <article class="project" data-tags="Linux,RHCSA,RHCE">
+                <div class="project-title">
+                  <span>Enterprise Linux Hardening Toolkit</span>
+                  <span class="project-year">2023</span>
+                </div>
+                <p class="project-desc">
+                  Automated baseline hardening for RHEL servers using Ansible: users, SSH, firewall,
+                  logging, and compliance checks inspired by RHCSA/RHCE best practices.
+                </p>
+                <div class="project-tags">
+                  <span>RHEL</span>
+                  <span>Ansible</span>
+                  <span>RHCSA/RHCE</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" target="_blank">Code (coming soon)</a>
+                </div>
+              </article>
+
+              <article class="project" data-tags="AWS,Kubernetes">
+                <div class="project-title">
+                  <span>AWS EKS Observability Stack</span>
+                  <span class="project-year">2023</span>
+                </div>
+                <p class="project-desc">
+                  Deployed an observability stack for workloads on EKS with metrics, logs and alerts
+                  across clusters, using managed services and IaC to keep it repeatable.
+                </p>
+                <div class="project-tags">
+                  <span>AWS</span>
+                  <span>EKS</span>
+                  <span>Terraform</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" target="_blank">Code (coming soon)</a>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- RIGHT COLUMN -->
+      <section class="col">
+
+        <!-- CERTIFICATIONS -->
+        <section class="card" id="certifications">
+          <div class="card-inner">
+            <div class="section-header">
+              <div>
+                <div class="section-title">Certifications</div>
+                <div class="section-sub">
+                  Click to view or verify against stored credential IDs.
+                </div>
+              </div>
+            </div>
+
+            <!-- BADGE FILTERS -->
+            <div class="badge-row" id="cert-badges">
+              <button class="badge active" data-tech="ALL">
+                <span class="dot"></span> All
+              </button>
+              <button class="badge" data-tech="Linux">
+                <span class="dot"></span> RHCSA / RHCE
+              </button>
+              <button class="badge" data-tech="Docker">
+                <span class="dot"></span> Docker
+              </button>
+              <button class="badge" data-tech="Kubernetes">
+                <span class="dot"></span> Kubernetes
+              </button>
+              <button class="badge" data-tech="AWS">
+                <span class="dot"></span> AWS
+              </button>
+            </div>
+
+            <!-- CERT LIST -->
+            <div class="cert-list" id="cert-list">
+              <!-- Filled by script.js using data model -->
+            </div>
+
+            <button class="btn btn-ghost" id="open-verify">
+              Run certificate verification
+            </button>
+          </div>
+        </section>
+
+        <!-- ABOUT / CONTACT -->
+        <section class="card" id="contact">
+          <div class="card-inner">
+            <div class="section-header">
+              <div>
+                <div class="section-title">About & Contact</div>
+                <div class="section-sub">
+                  Quick snapshot + direct contact options.
+                </div>
+              </div>
+            </div>
+
+            <div class="list">
+              <div class="list-item">
+                <div class="list-title">Role</div>
+                <div class="list-meta">Cloud / DevOps Engineer with focus on Kubernetes, Docker and Linux.</div>
+              </div>
+              <div class="list-item">
+                <div class="list-title">Experience</div>
+                <div class="list-meta">Hands-on with infra automation, containerization and production operations.</div>
+              </div>
+              <div class="list-item">
+                <div class="list-title">Strong Areas</div>
+                <div class="list-meta">
+                  Kubernetes, Docker, RHCSA/RHCE-level Linux, monitoring, troubleshooting, automation.
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <a class="contact-pill" href="mailto:your-email@example.com">
+                Email
+              </a>
+              <a class="contact-pill" href="https://github.com/YOUR_GITHUB" target="_blank">
+                GitHub
+              </a>
+              <a class="contact-pill" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">
+                LinkedIn
+              </a>
+              <a class="contact-pill" href="tel:+919766974713">
+                Phone: +91-9766974713
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <span>© <span id="year"></span> Aditya Chorat</span>
+      <span>Built with HTML, CSS, JS • Hosted on GitHub Pages</span>
+    </footer>
+
+    <!-- CERT VERIFICATION MODAL -->
+    <div class="modal-backdrop" id="verify-modal">
+      <div class="modal">
+        <div class="modal-header">
+          <span>Verify a Certification</span>
+          <button class="modal-close" id="close-verify">✕</button>
+        </div>
+        <div class="modal-body">
+          <label class="field">
+            <span class="field-label">Select certificate</span>
+            <select id="verify-cert-select"></select>
+          </label>
+
+          <label class="field">
+            <span class="field-label">Enter verification code</span>
+            <input type="text" id="verify-code-input" placeholder="E.g. RHCSA-1234-5678" />
+          </label>
+
+          <button class="btn btn-primary" id="run-verify">Verify</button>
+
+          <div id="verify-result" class="verify-result"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
